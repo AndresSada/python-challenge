@@ -1,6 +1,11 @@
 import csv
 import os
 
+print(os.getcwd())
+# print(__file__)
+# print(os.path.dirname(__file__))
+os.chdir(os.path.dirname(os.path.realpath(__file__)))
+print(os.getcwd())
 # Files to load and output (update with correct file paths)
 file_to_load = os.path.join("Resources", "election_data.csv")  # Input file path
 file_to_output = os.path.join("analysis", "election_analysis.txt")  # Output file path
